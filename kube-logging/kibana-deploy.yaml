@@ -38,6 +38,6 @@ spec:
             cpu: 100m
         env:
           - name: ELASTICSEARCH_URL
-            value: http://elasticsearch:9200
+            value: http://192.168.184.128:9200
         ports:
         - containerPort: 5601
