@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
       - name: elasticsearch
-        image: docker.elastic.co/elasticsearch/elasticsearch:7.2.0
+        image: docker.elastic.co/elasticsearch/elasticsearch:8.6.1-amd64
         resources:
             limits:
-              cpu: 100m
+              cpu: 1000m
             requests:
               cpu: 100m
         ports:
