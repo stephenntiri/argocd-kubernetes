@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: es-statefulset
+  name: es-cluster
   namespace: kube-logging
 spec:
   serviceName: elasticsearch
