@@ -48,8 +48,7 @@ spec:
       initContainers:
       - name: fix-permissions
         image: busybox
-      
-      command: ["sh", "-c", "chown -R 1000:1000 /usr/share/elasticsearch/data"]
+        command: ["sh", "-c", "chown -R 1000:1000 /usr/share/elasticsearch/data"]
         securityContext:
           privileged: true
         volumeMounts:
@@ -70,7 +69,7 @@ spec:
         command: ["sh", "-c", "ulimit -n 65536"]
         securityContext:
           privileged: true
-    volumes:
-      - name: data
-        hostPath:
-        path: /data  
+      volumes:
+        - name: data
+          hostPath:
+          path: /data  
