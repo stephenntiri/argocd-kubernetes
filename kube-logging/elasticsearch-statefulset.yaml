@@ -64,11 +64,6 @@ spec:
         command: ["sh", "-c", "ulimit -n 65536"]
         securityContext:
           privileged: true
-      - name: increase-fd-ulimit
-        image: busybox
-        command: ["sh", "-c", "ulimit -n 65536"]
-        securityContext:
-          privileged: true
       volumes:
       - name: data
         hostPath:
