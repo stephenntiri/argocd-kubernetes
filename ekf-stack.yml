@@ -42,14 +42,6 @@ spec:
   selector:
     app: efk
   ports:
-    apiVersion: v1
-kind: Service
-metadata:
-  name: elastic-fluentd-kibana
-spec:
-  selector:
-    app: efk
-  ports:
       - port: 9200
         name: elastic
       - port: 9300
