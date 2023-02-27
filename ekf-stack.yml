@@ -54,7 +54,7 @@ spec:
     - protocol: TCP
       port: 24224
       targetPort: 24224
-      name: kibana
+      name: http
     - protocol: TCP
       port: 5601
       targetPort: 5601
