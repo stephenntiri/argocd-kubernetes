@@ -42,15 +42,19 @@ spec:
   selector:
     app: efk
   ports:
+      name: elasticsearch
     - protocol: TCP
       port: 9200
       targetPort: 9200
+      name: transport
     - protocol: TCP
       port: 9300
       targetPort: 9300
+      name: fluentd
     - protocol: TCP
       port: 24224
       targetPort: 24224
+      name: kibana
     - protocol: TCP
       port: 5601
       targetPort: 5601
