@@ -3,23 +3,12 @@ on:
   workflow_dispatch
   
 jobs:
-  job_1:
-    ubuntu-environment-variables:
-      runs-on: ubuntu-latest
-      steps:
-        - run: env > file.txt
-        - uses: actions/upload-artifact@v2
-          with: 
-            name: file
-            path: file.txt
-      
-          
-  windows-environment-variables:  
-    runs-on: windows-latest
-      steps:
-        - run: env
-  macos-environment-variables:
-    runs-on: macos-latest
+  ubuntu-environment-variables:
+    runs-on: ubuntu-latest
     steps:
-      - run: env
+      - run: env > file.txt
+      - uses: actions/upload-artifact@v2
+        with: 
+          name: file
+          path: file.txt
       
